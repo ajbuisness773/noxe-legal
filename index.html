@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Noxe — Legal</title>
+<meta name="description" content="Noxe Privacy Policy, Terms of Use, and Community Guidelines." />
+<style>
+  /* Noxe brand: neon purple on void black — matches the app exactly (NEON_PURPLE #A05BFF, bg #070611). */
+  :root {
+    color-scheme: dark;
+    --acc: #A05BFF;
+    --acc-glow: rgba(160,91,255,0.85);
+    --bg: #070611;
+    --txt: rgba(255,255,255,0.86);
+    --muted: rgba(255,255,255,0.45);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--txt);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    position: relative; min-height: 100vh;
+  }
+  /* accent aura — the same purple-into-void fade the app's profile and auth screens open with */
+  body::before {
+    content: ""; position: fixed; inset: 0 0 auto 0; height: 440px; pointer-events: none; z-index: 0;
+    background: linear-gradient(180deg, rgba(160,91,255,0.22) 0%, rgba(160,91,255,0.08) 38%, rgba(160,91,255,0) 100%);
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 52px 22px 90px; position: relative; z-index: 1; }
+  a { color: var(--acc); text-decoration-color: rgba(160,91,255,0.4); text-underline-offset: 3px; }
+  a:hover { text-shadow: 0 0 12px var(--acc-glow); }
+  .brand {
+    font-size: 34px; font-weight: 900; letter-spacing: -1px; color: #fff;
+    text-shadow: 0 0 26px rgba(160,91,255,0.55);
+  }
+  .brand span { color: var(--acc); text-shadow: 0 0 18px var(--acc-glow); }
+  .updated { color: var(--muted); font-size: 13px; margin-top: 6px; }
+  nav { display: flex; flex-wrap: wrap; gap: 9px; margin: 28px 0 8px; }
+  nav a {
+    text-decoration: none; font-size: 12.5px; font-weight: 800; padding: 9px 15px; border-radius: 999px;
+    color: var(--acc); border: 1px solid rgba(160,91,255,0.45); background: rgba(160,91,255,0.09);
+    transition: background .18s ease, box-shadow .18s ease, transform .18s ease;
+  }
+  nav a:hover {
+    background: rgba(160,91,255,0.18); box-shadow: 0 0 18px rgba(160,91,255,0.35);
+    transform: translateY(-1px); text-shadow: none;
+  }
+  /* each section reads as one of the app's neon cards: translucent fill, hairline rim, lit top edge */
+  section {
+    margin-top: 30px; scroll-margin-top: 20px; position: relative;
+    background: rgba(255,255,255,0.028); border: 1px solid rgba(160,91,255,0.22);
+    border-radius: 18px; padding: 26px 24px 28px; overflow: hidden;
+    box-shadow: 0 0 34px rgba(160,91,255,0.10);
+  }
+  section::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, rgba(160,91,255,0) 0%, var(--acc) 50%, rgba(160,91,255,0) 100%);
+  }
+  h2 { font-size: 22px; color: #fff; margin: 0 0 6px; letter-spacing: -0.3px; }
+  h3 {
+    font-size: 12px; color: var(--acc); margin: 24px 0 5px;
+    text-transform: uppercase; letter-spacing: 1.1px; font-weight: 800;
+  }
+  p, li { color: rgba(255,255,255,0.8); }
+  ul { padding-left: 20px; }
+  li { margin: 5px 0; }
+  li::marker { color: rgba(160,91,255,0.7); }
+  hr { border: none; border-top: 1px solid rgba(255,255,255,0.07); margin: 40px 0 0; }
+  .zt { color: #FBBF24; font-weight: 700; }
+  footer { margin-top: 46px; color: var(--muted); font-size: 13px; }
+  footer a { font-weight: 700; }
+  @media (max-width: 560px) {
+    .wrap { padding: 38px 16px 70px; }
+    section { padding: 22px 18px 24px; border-radius: 16px; }
+    .brand { font-size: 29px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">noxe<span>.</span></div>
+  <div class="updated">Last updated: July 2026</div>
+
+  <nav>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms of Use</a>
+    <a href="#guidelines">Community Guidelines</a>
+    <a href="#attributions">Data &amp; attributions</a>
+  </nav>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>This policy explains what Noxe collects and how it is used.</p>
+    <h3>What we collect</h3>
+    <ul>
+      <li><strong>Account:</strong> your email address (for sign-in and cloud sync).</li>
+      <li><strong>Content you create:</strong> profile details, ratings, notes, comments, and messages.</li>
+      <li><strong>Photos you choose to add</strong> — only the specific images you pick.</li>
+      <li><strong>Connected accounts (optional):</strong> if you link Steam, we import your public game hours; if you link Spotify, we import your top tracks and artists. Both are used to build your taste profile, and you can disconnect either at any time.</li>
+      <li><strong>Push notification token:</strong> if you turn on notifications, your device's push token, so we can tell you about likes, comments, follows, and messages. Turning notifications off stops this.</li>
+    </ul>
+    <h3>How we use it</h3>
+    <p>To run your account, sync your data across your devices, and power taste-matching and recommendations. We do <strong>not</strong> sell your personal data.</p>
+    <h3>Where it's stored</h3>
+    <p>With our backend provider (Supabase) and cached locally on your device.</p>
+    <h3>Your choices</h3>
+    <p>Edit or remove your data in the app, disconnect linked accounts, or permanently delete your account and <strong>all</strong> associated data from Settings → Account → Delete account.</p>
+    <h3>Children</h3>
+    <p>Noxe is not directed to children under 13, and we do not knowingly collect data from them.</p>
+    <h3>Contact</h3>
+    <p>Privacy questions: <a href="mailto:help@noxeteam.com">help@noxeteam.com</a></p>
+  </section>
+
+  <hr />
+
+  <section id="terms">
+    <h2>Terms of Use</h2>
+    <p>By creating an account or using Noxe, you agree to these Terms and to our Community Guidelines.</p>
+    <ul>
+      <li>You must be at least 13 (or the minimum age required in your country).</li>
+      <li>You are responsible for the content you post and must have the right to share it.</li>
+      <li>You grant Noxe a limited licence to display the content you post within the app.</li>
+      <li>Media titles, cover art, and metadata belong to their respective owners and are shown for identification and discovery only — Noxe claims no ownership of them.</li>
+      <li>We may suspend or remove accounts that violate these Terms or the Community Guidelines.</li>
+      <li>Noxe is provided "as is", without warranties. To the extent permitted by law, Noxe is not liable for user content or third-party data.</li>
+      <li>You can delete your account and all associated data at any time from Settings → Account → Delete account.</li>
+    </ul>
+    <h3>Copyright &amp; takedown</h3>
+    <p>Noxe respects intellectual property rights. Cover art, metadata, and other media details are provided by third-party catalogues (see <a href="#attributions">Data &amp; attributions</a>) and remain the property of their owners. If you are a rights holder and believe content shown in Noxe infringes your copyright, email <a href="mailto:help@noxeteam.com">help@noxeteam.com</a> with the work concerned and where it appears in the app, and we will review and remove or replace it promptly. Users can also flag specific content in-app using Report → "Intellectual property".</p>
+    <h3>Contact</h3>
+    <p><a href="mailto:help@noxeteam.com">help@noxeteam.com</a></p>
+  </section>
+
+  <hr />
+
+  <section id="guidelines">
+    <h2>Community Guidelines</h2>
+    <p>Noxe is a place to celebrate the media you love. To keep it safe for everyone, we have <span class="zt">ZERO TOLERANCE</span> for objectionable content and abusive behavior.</p>
+    <h3>Not allowed</h3>
+    <ul>
+      <li>Harassment, bullying, or threats of any kind</li>
+      <li>Hate speech or slurs targeting any group</li>
+      <li>Sexual content or nudity</li>
+      <li>Violence, gore, or content promoting self-harm</li>
+      <li>Spam, scams, or impersonation</li>
+      <li>Sharing anyone's private information</li>
+    </ul>
+    <h3>How we keep it safe</h3>
+    <ul>
+      <li>Objectionable language is filtered automatically.</li>
+      <li>Every post, comment, and profile can be reported (tap ⋯ → Report) or blocked.</li>
+      <li>Reports are reviewed by the Noxe team, and we act on violations within 24 hours.</li>
+      <li>Accounts that break these rules may be suspended or permanently removed.</li>
+    </ul>
+    <p>By using Noxe you agree to follow these guidelines.</p>
+  </section>
+
+  <hr />
+
+  <section id="attributions">
+    <h2>Data &amp; attributions</h2>
+    <p>Noxe shows media titles, cover art, and details from third-party catalogues so you can identify and discover the things you love. All titles, artwork, and metadata belong to their respective owners — Noxe claims no ownership of them, and they are shown for identification and discovery only.</p>
+    <h3>Data sources</h3>
+    <ul>
+      <li><strong>Movies &amp; TV</strong> — This product uses TMDB and the TMDB APIs but is not endorsed, certified, or otherwise approved by TMDB. <a href="https://www.themoviedb.org" target="_blank" rel="noopener" aria-label="TMDB"><svg style="height:13px;width:auto;vertical-align:middle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 273.42 35.52"><defs><linearGradient id="linear-gradient" y1="17.76" x2="273.42" y2="17.76" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#90cea1"/><stop offset="0.56" stop-color="#3cbec9"/><stop offset="1" stop-color="#00b3e5"/></linearGradient></defs><title>Asset 3</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path fill="url(#linear-gradient)" d="M191.85,35.37h63.9A17.67,17.67,0,0,0,273.42,17.7h0A17.67,17.67,0,0,0,255.75,0h-63.9A17.67,17.67,0,0,0,174.18,17.7h0A17.67,17.67,0,0,0,191.85,35.37ZM10.1,35.42h7.8V6.92H28V0H0v6.9H10.1Zm28.1,0H46V8.25h.1L55.05,35.4h6L70.3,8.25h.1V35.4h7.8V0H66.45l-8.2,23.1h-.1L50,0H38.2ZM89.14.12h11.7a33.56,33.56,0,0,1,8.08,1,18.52,18.52,0,0,1,6.67,3.08,15.09,15.09,0,0,1,4.53,5.52,18.5,18.5,0,0,1,1.67,8.25,16.91,16.91,0,0,1-1.62,7.58,16.3,16.3,0,0,1-4.38,5.5,19.24,19.24,0,0,1-6.35,3.37,24.53,24.53,0,0,1-7.55,1.15H89.14Zm7.8,28.2h4a21.66,21.66,0,0,0,5-.55A10.58,10.58,0,0,0,110,26a8.73,8.73,0,0,0,2.68-3.35,11.9,11.9,0,0,0,1-5.08,9.87,9.87,0,0,0-1-4.52,9.17,9.17,0,0,0-2.63-3.18A11.61,11.61,0,0,0,106.22,8a17.06,17.06,0,0,0-4.68-.63h-4.6ZM133.09.12h13.2a32.87,32.87,0,0,1,4.63.33,12.66,12.66,0,0,1,4.17,1.3,7.94,7.94,0,0,1,3,2.72,8.34,8.34,0,0,1,1.15,4.65,7.48,7.48,0,0,1-1.67,5,9.13,9.13,0,0,1-4.43,2.82V17a10.28,10.28,0,0,1,3.18,1,8.51,8.51,0,0,1,2.45,1.85,7.79,7.79,0,0,1,1.57,2.62,9.16,9.16,0,0,1,.55,3.2,8.52,8.52,0,0,1-1.2,4.68,9.32,9.32,0,0,1-3.1,3A13.38,13.38,0,0,1,152.32,35a22.5,22.5,0,0,1-4.73.5h-14.5Zm7.8,14.15h5.65a7.65,7.65,0,0,0,1.78-.2,4.78,4.78,0,0,0,1.57-.65,3.43,3.43,0,0,0,1.13-1.2,3.63,3.63,0,0,0,.42-1.8A3.3,3.3,0,0,0,151,8.6a3.42,3.42,0,0,0-1.23-1.13A6.07,6.07,0,0,0,148,6.9a9.9,9.9,0,0,0-1.85-.18h-5.3Zm0,14.65h7a8.27,8.27,0,0,0,1.83-.2,4.67,4.67,0,0,0,1.67-.7,3.93,3.93,0,0,0,1.23-1.3,3.8,3.8,0,0,0,.47-1.95,3.16,3.16,0,0,0-.62-2,4,4,0,0,0-1.58-1.18,8.23,8.23,0,0,0-2-.55,15.12,15.12,0,0,0-2.05-.15h-5.9Z"/></g></g></svg></a></li>
+      <li><strong>Games</strong> — Game titles and cover art are provided by <a href="https://www.igdb.com" target="_blank" rel="noopener">IGDB.com</a>, a Twitch service.</li>
+      <li><strong>Steam</strong> — Some game details, cover art, and imported playtime come from Steam. Powered by Steam &copy; Valve Corporation. Steam and the Steam logo are trademarks of Valve Corporation. <a href="https://store.steampowered.com" target="_blank"><svg style="height:16px;width:16px;vertical-align:middle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 65 65" fill="#fff"><use xlink:href="#B" x=".5" y=".5"/><defs><linearGradient id="A" x2="50%" x1="50%" y2="100%" y1="0%"><stop stop-color="#111d2e" offset="0%"/><stop stop-color="#051839" offset="21.2%"/><stop stop-color="#0a1b48" offset="40.7%"/><stop stop-color="#132e62" offset="58.1%"/><stop stop-color="#144b7e" offset="73.8%"/><stop stop-color="#136497" offset="87.3%"/><stop stop-color="#1387b8" offset="100%"/></linearGradient></defs><symbol id="B"><g><path d="M1.305 41.202C5.259 54.386 17.488 64 31.959 64c17.673 0 32-14.327 32-32s-14.327-32-32-32C15.001 0 1.124 13.193.028 29.874c2.074 3.477 2.879 5.628 1.275 11.328z" fill="url(#A)"/><path d="M30.31 23.985l.003.158-7.83 11.375c-1.268-.058-2.54.165-3.748.662a8.14 8.14 0 0 0-1.498.8L.042 29.893s-.398 6.546 1.26 11.424l12.156 5.016c.6 2.728 2.48 5.12 5.242 6.27a8.88 8.88 0 0 0 11.603-4.782 8.89 8.89 0 0 0 .684-3.656L42.18 36.16l.275.005c6.705 0 12.155-5.466 12.155-12.18s-5.44-12.16-12.155-12.174c-6.702 0-12.155 5.46-12.155 12.174zm-1.88 23.05c-1.454 3.5-5.466 5.147-8.953 3.694a6.84 6.84 0 0 1-3.524-3.362l3.957 1.64a5.04 5.04 0 0 0 6.591-2.719 5.05 5.05 0 0 0-2.715-6.601l-4.1-1.695c1.578-.6 3.372-.62 5.05.077 1.7.703 3 2.027 3.696 3.72s.692 3.56-.01 5.246M42.466 32.1a8.12 8.12 0 0 1-8.098-8.113 8.12 8.12 0 0 1 8.098-8.111 8.12 8.12 0 0 1 8.1 8.111 8.12 8.12 0 0 1-8.1 8.113m-6.068-8.126a6.09 6.09 0 0 1 6.08-6.095c3.355 0 6.084 2.73 6.084 6.095a6.09 6.09 0 0 1-6.084 6.093 6.09 6.09 0 0 1-6.081-6.093z"/></g></symbol></svg></a></li>
+      <li><strong>Music</strong> — Album artwork and song previews are provided courtesy of Apple / iTunes; music links open in Apple Music. Apple, the Apple logo, and Apple Music are trademarks of Apple Inc.</li>
+      <li><strong>Spotify</strong> — When you connect Spotify, your top tracks and artists are provided by Spotify. Spotify and the Spotify logo are trademarks of Spotify AB. <a href="https://www.spotify.com" target="_blank" rel="noopener" aria-label="Spotify"><img src="data:image/png;base64,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" alt="Spotify" style="height:15px;width:15px;vertical-align:middle" /></a></li>
+      <li><strong>Books</strong> — Cover images and details are from Open Library, a project of the Internet Archive.</li>
+      <li><strong>Anime &amp; Manga</strong> — Cover art and details are from AniList.</li>
+    </ul>
+    <p>If you own rights to content shown in Noxe and would like it changed or removed, contact <a href="mailto:help@noxeteam.com">help@noxeteam.com</a>.</p>
+  </section>
+
+  <footer>
+    © 2026 Noxe · <a href="mailto:help@noxeteam.com">help@noxeteam.com</a>
+  </footer>
+</div>
+</body>
+</html>
